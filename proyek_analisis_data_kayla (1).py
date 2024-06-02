@@ -49,7 +49,7 @@ data = {'orders': orders,
 print(orders.head())
 print(order_items.head())
 print(products.head())
-print(order_reviews.head())
+print(reviews.head())
 
 """### Assessing Data"""
 
