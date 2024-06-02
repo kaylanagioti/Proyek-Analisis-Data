@@ -1,7 +1,7 @@
 # E-Commerce Public Data Analysis with Python - Dicoding
-![E-Commerce Data Dashboard](dashboard.gif)
+![E-Commerce Data Dashboard](data-kayla.gif)
 
-[E-Commerce Data Dashboard Streamlit App](https://e-commerce-data-analyst.streamlit.app/)
+[E-Commerce Data Dashboard Streamlit App](https://data-kayla.streamlit.app/)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -40,12 +40,6 @@ pip install -r requirements.txt
 2. **Exploratory Data Analysis (EDA)**: Explore and analyze the data using the provided Python scripts. EDA insights can guide your understanding of e-commerce public data patterns.
 
 3. **Visualization**: Run the Streamlit dashboard for interactive data exploration:
-
-```
-cd data-analyst-dicoding/dashboard
-streamlit run dashboard.py
-```
-Access the dashboard in your web browser at `http://localhost:8501`.
 
 ## Data Sources
 The project uses E-Commerce Public Dataset from [Belajar Analisis Data dengan Python's Final Project](https://drive.google.com/file/d/1MsAjPM7oKtVfJL_wRp1qmCajtSG1mdcK/view) offered by [Dicoding](https://www.dicoding.com/).
