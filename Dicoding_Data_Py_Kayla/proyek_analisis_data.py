@@ -15,10 +15,10 @@ import matplotlib.pyplot as plt
 
 # Fungsi untuk memuat data
 def load_data():
-    orders = pd.read_csv('https://raw.githubusercontent.com/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_orders_dataset.csv')
+    orders = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_orders_dataset.csv')
     order_items = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_order_items_dataset.csv')
-    products = pd.read_csv('https://raw.githubusercontent.com/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_products_dataset.csv')
-    order_reviews = pd.read_csv('https://raw.githubusercontent.com/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_order_reviews_dataset.csv')
+    products = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_products_dataset.csv')
+    order_reviews = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/blob/main/Dicoding_Data_Py_Kayla/data/olist_order_reviews_dataset.csv')
     return orders, order_items, products, order_reviews
 
 # Memuat data
