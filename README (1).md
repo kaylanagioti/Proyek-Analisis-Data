@@ -40,6 +40,9 @@ pip install -r requirements.txt
 2. **Exploratory Data Analysis (EDA)**: Explore and analyze the data using the provided Python scripts. EDA insights can guide your understanding of e-commerce public data patterns.
 
 3. **Visualization**: Run the Streamlit dashboard for interactive data exploration:
-
+```
+cd Proyek-Analisis-Data/Dicoding_Data_Py_Kayla
+streamlit proyek_analisis_data.py
+```
 ## Data Sources
 The project uses E-Commerce Public Dataset from [Belajar Analisis Data dengan Python's Final Project](https://drive.google.com/file/d/1MsAjPM7oKtVfJL_wRp1qmCajtSG1mdcK/view) offered by [Dicoding](https://www.dicoding.com/).
