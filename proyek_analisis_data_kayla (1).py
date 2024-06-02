@@ -36,28 +36,19 @@ plt.rcParams['figure.figsize'] = [10, 6]
 ### Gathering Data
 """
 
-orders = pd.read_csv('olist_orders_dataset.csv')
-order_items = pd.read_csv('olist_order_items_dataset.csv')
-products = pd.read_csv('olist_products_dataset.csv')
-customers = pd.read_csv('olist_customers_dataset.csv')
-geolocation = pd.read_csv('olist_geolocation_dataset.csv')
-order_payments = pd.read_csv('olist_order_payments_dataset.csv')
-order_reviews = pd.read_csv('olist_order_reviews_dataset.csv')
+orders = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/main/Dicoding_Data_Py_Kayla/data/olist_orders_dataset.csv')
+order_items = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/main/Dicoding_Data_Py_Kayla/data/olist_order_items_dataset.csv')
+products = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/main/Dicoding_Data_Py_Kayla/data/olist_products_dataset.csv')
+order_reviews = pd.read_csv('https://raw.githubusercontent.com/kaylanagioti/Proyek-Analisis-Data/main/Dicoding_Data_Py_Kayla/data/olist_order_reviews_dataset.csv')
 
 data = {'orders': orders,
         'items': order_items,
         'products': products,
-        'payments': order_payments,
-        'reviews': order_reviews,
-        'customers': customers,
-        'geo': geolocation}
+        'reviews': order_reviews}
 
 print(orders.head())
 print(order_items.head())
 print(products.head())
-print(customers.head())
-print(geolocation.head())
-print(order_payments.head())
 print(order_reviews.head())
 
 """### Assessing Data"""
@@ -109,18 +100,12 @@ for df_name, df in data.items():
 orders.dropna(subset=['order_id', 'customer_id'], inplace=True)
 order_items.dropna(subset=['order_id', 'product_id'], inplace=True)
 products.dropna(subset=['product_id'], inplace=True)
-customers.dropna(subset=['customer_id'], inplace=True)
-geolocation.dropna(subset=['geolocation_zip_code_prefix'], inplace=True)
-order_payments.dropna(subset=['order_id'], inplace=True)
 order_reviews.dropna(subset=['order_id'], inplace=True)
 
 # Memastikan tidak ada duplikat
 orders.drop_duplicates(inplace=True)
 order_items.drop_duplicates(inplace=True)
 products.drop_duplicates(inplace=True)
-customers.drop_duplicates(inplace=True)
-geolocation.drop_duplicates(inplace=True)
-order_payments.drop_duplicates(inplace=True)
 order_reviews.drop_duplicates(inplace=True)
 
 """Menggabungkan Data untuk Analisis"""
